@@ -41,7 +41,7 @@ async def start2(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✅ Ya", Ingin Mencari Lagu??""
+                        "✅ Ya", switch_inline_query_current_chat=""
                     ),
                     InlineKeyboardButton(
                         "Tidak ❌", callback_data="Close"
