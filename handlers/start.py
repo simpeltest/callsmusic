@@ -7,25 +7,25 @@ from helpers.filters import command, other_filters, other_filters2
 @Client.on_message(command("start") & other_filters2)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""<b>👋🏻 Halo, {message.from_user.first_name}!</b>
-Saya adalah bot music voice call group!
-Dirancang khusus untuk menemanimu di obrolan suara.
-Berikut dibawah ini adalah kontak owner bot.""",
+        f"""<b>👋🏻 Haii guys!, {message.from_user.first_name}!</b>
+Aku adalah bot music voice chat group!
+Aku Akan Menemanimu Dengan Alunan Musik!.
+Apabila Kurang Mengerti,Bisa Pc Ownerku Yakk!.""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "⚒ OWNER BOT", url="https://t.me/boiii999"
+                        "⚒ Owner Aku!", url="https://t.me/afterdaytoxic"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "INSTAGRAM", url="https://www.instagram.com/aipmarvelous/"
+                        "Instagram Aku!", url="https://www.instagram.com/ronaldysyach_/"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "CARA MEMAKAINYA", url="https://telegra.ph/Cara-Menggunakan-BoI-Music-Bot-boimusic-bot-03-09"
+                        "Cara Menggunakan Aku!", url="https://telegra.ph/Tasya-03-22"
                     )
                 ]
             ]
@@ -41,10 +41,10 @@ async def start2(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✅ Ya", switch_inline_query_current_chat=""
+                        "✅ Ya", Ingin Mencari Lagu??""
                     ),
                     InlineKeyboardButton(
-                        "Tidak ❌", callback_data="close"
+                        "Tidak ❌", callback_data="Close"
                     )
                 ]
             ]
