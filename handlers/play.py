@@ -35,10 +35,10 @@ async def play(_, message: Message):
     elif url:
         file_path = await converter.convert(youtube.download(url))
     else:
-        return await message.reply_text("You did not give me anything to play!")
+        return await message.reply_text("Aku Tidak Menemukan Link Lagu!")
 
     if message.chat.id in callsmusic.pytgcalls.active_calls:
         await message.reply_text(f"Queued at position {callsmusic.queues.add(message.chat.id, file_path)}!")
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
-        await message.reply_text("Playing...")
+        await message.reply_text("Lagumu Sudah Di-Mulai!...")
