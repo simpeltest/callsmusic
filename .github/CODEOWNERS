@@ -1,0 +1,11 @@
+/handlers/admins.py @simpeltest
+/handlers/callback.py @simpeltest
+/handlers/play.py @simpeltest
+/handlers/start.py @simpeltest
+/handlers/inline.py @simpeltest
+/callsmusic/ @simpeltest
+/cache/ @simpeltest
+/converter/ @simpeltest
+/youtube/ @simpeltest
+/queues/ @simpeltest
+Dockerfile @simpeltest
